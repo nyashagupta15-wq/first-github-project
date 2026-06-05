@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DSA Roadmap - SkillChill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .roadmap-hero {
+            background: linear-gradient(135deg, #064e3b, #059669);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .roadmap-hero h1 { font-size: 36px; margin-bottom: 10px; }
+        .roadmap-hero p { font-size: 16px; opacity: 0.9; }
+        .roadmap-section { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        .stage { display: flex; gap: 20px; margin-bottom: 40px; }
+        .stage-left { display: flex; flex-direction: column; align-items: center; }
+        .stage-number {
+            width: 44px; height: 44px; border-radius: 50%;
+            background-color: #059669; color: white;
+            font-weight: bold; font-size: 18px;
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .stage-line { width: 2px; flex: 1; background-color: #cbd5e1; margin-top: 8px; }
+        .stage-content {
+            background: white; border-radius: 12px; padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07); flex: 1; margin-bottom: 10px;
+        }
+        .stage-content h3 { font-size: 18px; margin-bottom: 6px; color: #064e3b; }
+        .stage-label {
+            font-size: 11px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 1px; padding: 3px 10px; border-radius: 20px;
+            display: inline-block; margin-bottom: 12px;
+        }
+        .beginner-label { background: #d4edda; color: #155724; }
+        .intermediate-label { background: #fff3cd; color: #856404; }
+        .advanced-label { background: #f8d7da; color: #721c24; }
+        .topics { list-style: none; padding: 0; margin: 0; }
+        .topics li {
+            padding: 6px 0; font-size: 14px; color: #444;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .topics li:last-child { border-bottom: none; }
+        .topics li::before { content: "→"; color: #059669; font-weight: bold; }
+        .duration { font-size: 12px; color: #888; margin-top: 10px; }
+        .mentor-cta {
+            background: linear-gradient(135deg, #064e3b, #059669);
+            color: white; text-align: center; padding: 50px 20px; margin-top: 40px;
+        }
+        .mentor-cta h2 { margin-bottom: 10px; }
+        .mentor-cta p { margin-bottom: 20px; opacity: 0.9; }
+        .mentor-cta a {
+            background: white; color: #059669; padding: 12px 30px;
+            border-radius: 6px; text-decoration: none; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">SkillChill</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="roadmap-hero">
+        <h1>🧠 DSA Roadmap</h1>
+        <p>Master Data Structures & Algorithms and crack any coding interview.</p>
+    </div>
+
+    <div class="roadmap-section">
+        <div class="stage">
+            <div class="stage-left"><div class="stage-number">1</div><div class="stage-line"></div></div>
+            <div class="stage-content">
+                <span class="stage-label beginner-label">Beginner</span>
+                <h3>Pick a Language & Learn Basics</h3>
+                <ul class="topics">
+                    <li>Choose Python, Java or C++</li>
+                    <li>Variables, loops, functions, recursion</li>
+                    <li>Time & Space Complexity (Big O)</li>
+                    <li>Solve 20 easy problems on LeetCode</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 3-4 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left"><div class="stage-number">2</div><div class="stage-line"></div></div>
+            <div class="stage-content">
+                <span class="stage-label beginner-label">Beginner</span>
+                <h3>Linear Data Structures</h3>
+                <ul class="topics">
+                    <li>Arrays and Strings</li>
+                    <li>Linked Lists (singly & doubly)</li>
+                    <li>Stacks and Queues</li>
+                    <li>Solve 30 problems on these topics</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 3-4 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left"><div class="stage-number">3</div><div class="stage-line"></div></div>
+            <div class="stage-content">
+                <span class="stage-label intermediate-label">Intermediate</span>
+                <h3>Non-Linear Data Structures</h3>
+                <ul class="topics">
+                    <li>Trees (Binary Tree, BST)</li>
+                    <li>Heaps and Priority Queues</li>
+                    <li>Hash Maps and Hash Sets</li>
+                    <li>Graphs (BFS, DFS)</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 5-6 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left"><div class="stage-number">4</div><div class="stage-line"></div></div>
+            <div class="stage-content">
+                <span class="stage-label intermediate-label">Intermediate</span>
+                <h3>Core Algorithms</h3>
+                <ul class="topics">
+                    <li>Sorting (Merge Sort, Quick Sort)</li>
+                    <li>Binary Search and variations</li>
+                    <li>Two Pointers and Sliding Window</li>
+                    <li>Recursion and Backtracking</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 4-5 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left"><div class="stage-number">5</div><div class="stage-line"></div></div>
+            <div class="stage-content">
+                <span class="stage-label advanced-label">Advanced</span>
+                <h3>Dynamic Programming</h3>
+                <ul class="topics">
+                    <li>Memoization vs Tabulation</li>
+                    <li>Classic DP problems (Knapsack, LCS)</li>
+                    <li>DP on Trees and Graphs</li>
+                    <li>Solve 20 DP problems on LeetCode</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 4-5 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left"><div class="stage-number">6</div></div>
+            <div class="stage-content">
+                <span class="stage-label advanced-label">Advanced</span>
+                <h3>Interview Prep</h3>
+                <ul class="topics">
+                    <li>Mock interviews and timed practice</li>
+                    <li>System design basics</li>
+                    <li>Solve 100+ LeetCode problems total</li>
+                    <li>Practice on Codeforces / CodeChef</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: Ongoing</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mentor-cta">
+        <h2>Need guidance? Talk to a Mentor 🚀</h2>
+        <p>Our DSA mentors have cracked interviews at Amazon, Google and more.</p>
+        <a href="mentors.html">Find a Mentor</a>
+    </div>
+
+    <footer><p>© 2025 SkillChill. All rights reserved.</p></footer>
+</body>
+</html>

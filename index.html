@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkillChill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">SkillChill</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Become a Techie with Top Techies</h1>
+        <p>Learn in-demand skills. Get mentored. Grow faster.</p>
+
+        <div class="signup-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="college" placeholder="College / Institution" required>
+            <input type="password" id="password" placeholder="Create Password" required>
+            <button onclick="handleSignup()">Get Started</button>
+            <p id="message"></p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Popular Skills</h2>
+        <div class="skill-cards">
+            <a href="webdev.html" class="card">Web Development</a>
+            <a href="data-analytics.html" class="card">Data Analytics</a>
+            <a href="dsa.html" class="card">Data Structures & Algorithms</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 SkillChill. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

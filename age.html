@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Age - SkillChill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">SkillChill</h2>
+</nav>
+
+<section class="hero">
+    <h1>Select Your Age Group</h1>
+    <p>This helps us recommend the right learning path.</p>
+
+    <div class="age-options">
+        <button onclick="selectAge('school')">Under 18</button>
+        <button onclick="selectAge('college')">18 - 23</button>
+        <button onclick="selectAge('professional')">24+</button>
+    </div>
+</section>
+
+<script>
+function selectAge(group) {
+    localStorage.setItem("ageGroup", group);
+    window.location.href = "skills.html";
+}
+</script>
+
+</body>
+</html>

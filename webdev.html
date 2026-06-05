@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Development Roadmap - SkillChill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .roadmap-hero {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .roadmap-hero h1 { font-size: 36px; margin-bottom: 10px; }
+        .roadmap-hero p { font-size: 16px; opacity: 0.9; }
+        .roadmap-section {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .stage {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .stage-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .stage-number {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: #2563eb;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .stage-line {
+            width: 2px;
+            flex: 1;
+            background-color: #cbd5e1;
+            margin-top: 8px;
+        }
+        .stage-content {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+            flex: 1;
+            margin-bottom: 10px;
+        }
+        .stage-content h3 {
+            font-size: 18px;
+            margin-bottom: 6px;
+            color: #1e3a8a;
+        }
+        .stage-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .beginner-label { background: #d4edda; color: #155724; }
+        .intermediate-label { background: #fff3cd; color: #856404; }
+        .advanced-label { background: #f8d7da; color: #721c24; }
+        .topics { list-style: none; padding: 0; margin: 0; }
+        .topics li {
+            padding: 6px 0;
+            font-size: 14px;
+            color: #444;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .topics li:last-child { border-bottom: none; }
+        .topics li::before { content: "→"; color: #2563eb; font-weight: bold; }
+        .duration { font-size: 12px; color: #888; margin-top: 10px; }
+        .mentor-cta {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 40px;
+        }
+        .mentor-cta h2 { margin-bottom: 10px; }
+        .mentor-cta p { margin-bottom: 20px; opacity: 0.9; }
+        .mentor-cta a {
+            background: white;
+            color: #2563eb;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">SkillChill</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="roadmap-hero">
+        <h1>🌐 Web Development Roadmap</h1>
+        <p>From zero to full-stack developer — follow this step by step.</p>
+    </div>
+
+    <div class="roadmap-section">
+        <div class="stage">
+            <div class="stage-left">
+                <div class="stage-number">1</div>
+                <div class="stage-line"></div>
+            </div>
+            <div class="stage-content">
+                <span class="stage-label beginner-label">Beginner</span>
+                <h3>The Basics — HTML & CSS</h3>
+                <ul class="topics">
+                    <li>HTML structure, tags, forms, tables</li>
+                    <li>CSS selectors, box model, flexbox</li>
+                    <li>CSS Grid and responsive design</li>
+                    <li>Build your first static webpage</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 3-4 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left">
+                <div class="stage-number">2</div>
+                <div class="stage-line"></div>
+            </div>
+            <div class="stage-content">
+                <span class="stage-label beginner-label">Beginner</span>
+                <h3>Make it Interactive — JavaScript</h3>
+                <ul class="topics">
+                    <li>Variables, loops, functions, arrays</li>
+                    <li>DOM manipulation and events</li>
+                    <li>Fetch API and working with JSON</li>
+                    <li>ES6+ features (arrow functions, promises)</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 4-6 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left">
+                <div class="stage-number">3</div>
+                <div class="stage-line"></div>
+            </div>
+            <div class="stage-content">
+                <span class="stage-label intermediate-label">Intermediate</span>
+                <h3>Version Control — Git & GitHub</h3>
+                <ul class="topics">
+                    <li>Git init, add, commit, push</li>
+                    <li>Branches, merging and pull requests</li>
+                    <li>Working with GitHub repositories</li>
+                    <li>Deploy a project using GitHub Pages</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 1-2 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left">
+                <div class="stage-number">4</div>
+                <div class="stage-line"></div>
+            </div>
+            <div class="stage-content">
+                <span class="stage-label intermediate-label">Intermediate</span>
+                <h3>Frontend Framework — React</h3>
+                <ul class="topics">
+                    <li>Components, props and state</li>
+                    <li>React Hooks (useState, useEffect)</li>
+                    <li>React Router for navigation</li>
+                    <li>Build a full React project</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 5-6 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left">
+                <div class="stage-number">5</div>
+                <div class="stage-line"></div>
+            </div>
+            <div class="stage-content">
+                <span class="stage-label intermediate-label">Intermediate</span>
+                <h3>Backend Basics — Node.js & Express</h3>
+                <ul class="topics">
+                    <li>Node.js fundamentals and npm</li>
+                    <li>Building REST APIs with Express</li>
+                    <li>Middleware, routing and error handling</li>
+                    <li>Connect frontend to backend</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 4-5 weeks</p>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="stage-left">
+                <div class="stage-number">6</div>
+            </div>
+            <div class="stage-content">
+                <span class="stage-label advanced-label">Advanced</span>
+                <h3>Databases & Deployment</h3>
+                <ul class="topics">
+                    <li>SQL basics with MySQL or PostgreSQL</li>
+                    <li>MongoDB for NoSQL databases</li>
+                    <li>Authentication with JWT</li>
+                    <li>Deploy on Vercel, Railway or Render</li>
+                </ul>
+                <p class="duration">⏱ Estimated time: 4-5 weeks</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mentor-cta">
+        <h2>Need guidance? Talk to a Mentor 🚀</h2>
+        <p>Our web dev mentors from top companies are here to help you.</p>
+        <a href="mentors.html">Find a Mentor</a>
+    </div>
+
+    <footer><p>© 2025 SkillChill. All rights reserved.</p></footer>
+</body>
+</html>
